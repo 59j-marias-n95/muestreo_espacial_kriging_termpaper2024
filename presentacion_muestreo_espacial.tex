@@ -97,7 +97,7 @@
 	La geoestadística fue desarrollada para analizar datos geológicos distribuidos en el espacio de un cuerpo mineral. Sus principales proponentes, habrían sido Matheron, Whittle y Gandin.
 	\end{frame}
 
-	\subsection{Utilidad y apliacciones}
+	\subsection{Utilidad y aplicaciones}
 	\begin{frame}{Utilidad y aplicaciones}
 		Los métodos de muestreo espacial se aplican a:
 		\begin{enumerate}
@@ -108,7 +108,7 @@
 		\end{enumerate}
 	\end{frame}
 
-	\section{Predicción Espacial: Kriging}
+	\section{Predicción espacial: kriging}
 	\begin{frame}{Muestreo espacial}
 		En el muestreo espacial se contemplan cantidades ambientales, ecológicas o geológicas como una variable aleatoria  $y_t$ cuyos valores son observaciones de un proceso estocástico
 		
@@ -150,8 +150,8 @@
 	\end{itemize} 
 	\end{frame}
 
-	\subsection{Función de Covarianza Espacial}
-	\begin{frame}{Función de Covarianza Espacial}
+	\subsection{Función de covarianza espacial}
+	\begin{frame}{Función de covarianza espacial}
 		La medida de relación entre las variables $y_1$ y $y_2$ asociadas a los sitios $t_1$ y $t_2$ es la covarianza, ec. \ref{covarianza}: 
 		
 		\begin{equation}
@@ -176,8 +176,8 @@
 		Un proceso se llama \textit{débilmente estacionario} cuando $\mu_t = \mu$, pero $C=C(d)$. 
 	\end{frame}
 
-	\subsection{Predicción Lineal: Kriging}
-	\begin{frame}{Predicción Lineal: Kriging}
+	\subsection{Predicción lineal: kriging}
+	\begin{frame}{Predicción lineal: kriging}
 		Utilizaremos la notación siguiente
 		\begin{itemize}
 			\item \textit{$y$-valor} observado en el iésimo sitio de la muestra de tamaño $n$: $y_i$
@@ -213,13 +213,13 @@
 		\noindent hallar valores $\left\lbrace a_i \right\rbrace_{i=1}^{n}$ que minimicen ec. \ref{MSPE} sujeto a ec. \ref{insesgadeza}. 
 		
 		\begin{equation*}
-		MSPE = E\left(y_0 - \hat{y}_0\right)^2%\label{MSPE}
+		MSPE = E\left(y_0 - \hat{y}_0\right)^2= c_{00} - \sum_{i=1}^{n}a_i c_{i0} - m\label{MSPE_kriging}%\label{MSPE}
 		\end{equation*}
 		
 		sujeto a:
 		
 		\begin{equation*}
-		E\left(\hat{y}_0\right) = E\left(y_0\right)= c_{00} - \sum_{i=1}^{n}a_i c_{i0} - m\label{MSPE_kriging}%\label{insesgadeza}
+		E\left(\hat{y}_0\right) = E\left(y_0\right)%\label{insesgadeza}
 		\end{equation*}
 	\end{frame}
 
