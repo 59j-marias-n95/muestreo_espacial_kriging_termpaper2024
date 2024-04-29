@@ -1,4 +1,5 @@
-#Técnicas de Muestreo Espacial: Aplicaciones e Implementación en R
+# Técnicas de Muestreo Espacial: Aplicaciones e Implementación en R
+
 Este repositirio es solo una herramienta de registro para el term paper del mismo título del readme.md. 
 El propósito de este trabajo fue conocer los métodos utilizados en estadística aplicada para analizar datos de muestras distribuidas en una región geográfica. 
 
